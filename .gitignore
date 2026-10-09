@@ -8,3 +8,10 @@ telemanom/__pycache__*
 # results/20*
 data.zip*
 .idea/*
+data/
+*.zip
+kaggle.json
+.env
+__pycache__/
+check_*.png
+telemanom/labeled_anomalies.csv

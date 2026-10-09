@@ -1,0 +1,1458 @@
+[
+  {
+    "event_id": "P-1-1",
+    "spacecraft": "SMAP",
+    "channel_id": "P-1",
+    "channel_group": "P",
+    "start_index": 2130,
+    "end_index": 2349,
+    "channel_error": 0.0850426836278292,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "P-1-2",
+    "spacecraft": "SMAP",
+    "channel_id": "P-1",
+    "channel_group": "P",
+    "start_index": 3190,
+    "end_index": 3329,
+    "channel_error": 0.0850426836278292,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": false
+    }
+  },
+  {
+    "event_id": "P-1-3",
+    "spacecraft": "SMAP",
+    "channel_id": "P-1",
+    "channel_group": "P",
+    "start_index": 3540,
+    "end_index": 3679,
+    "channel_error": 0.0850426836278292,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "P-1-4",
+    "spacecraft": "SMAP",
+    "channel_id": "P-1",
+    "channel_group": "P",
+    "start_index": 4520,
+    "end_index": 4589,
+    "channel_error": 0.0850426836278292,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "S-1-1",
+    "spacecraft": "SMAP",
+    "channel_id": "S-1",
+    "channel_group": "S",
+    "start_index": 5290,
+    "end_index": 5656,
+    "channel_error": 0.1910579656145127,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-1-1",
+    "spacecraft": "SMAP",
+    "channel_id": "E-1",
+    "channel_group": "E",
+    "start_index": 1751,
+    "end_index": 2001,
+    "channel_error": 0.0676709844923917,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": false
+    }
+  },
+  {
+    "event_id": "E-1-2",
+    "spacecraft": "SMAP",
+    "channel_id": "E-1",
+    "channel_group": "E",
+    "start_index": 5010,
+    "end_index": 5149,
+    "channel_error": 0.0676709844923917,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-1-3",
+    "spacecraft": "SMAP",
+    "channel_id": "E-1",
+    "channel_group": "E",
+    "start_index": 5570,
+    "end_index": 5965,
+    "channel_error": 0.0676709844923917,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-2-1",
+    "spacecraft": "SMAP",
+    "channel_id": "E-2",
+    "channel_group": "E",
+    "start_index": 5570,
+    "end_index": 5919,
+    "channel_error": 0.0688159420907057,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-3-1",
+    "spacecraft": "SMAP",
+    "channel_id": "E-3",
+    "channel_group": "E",
+    "start_index": 5570,
+    "end_index": 5779,
+    "channel_error": 0.0177292048957497,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-4-1",
+    "spacecraft": "SMAP",
+    "channel_id": "E-4",
+    "channel_group": "E",
+    "start_index": 5570,
+    "end_index": 5975,
+    "channel_error": 0.0550962256898876,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-5-1",
+    "spacecraft": "SMAP",
+    "channel_id": "E-5",
+    "channel_group": "E",
+    "start_index": 5570,
+    "end_index": 5709,
+    "channel_error": 0.0828512206419519,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-6-1",
+    "spacecraft": "SMAP",
+    "channel_id": "E-6",
+    "channel_group": "E",
+    "start_index": 5570,
+    "end_index": 5779,
+    "channel_error": 0.0084706352402021,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-7-1",
+    "spacecraft": "SMAP",
+    "channel_id": "E-7",
+    "channel_group": "E",
+    "start_index": 5430,
+    "end_index": 5766,
+    "channel_error": 0.0250065106714026,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-8-1",
+    "spacecraft": "SMAP",
+    "channel_id": "E-8",
+    "channel_group": "E",
+    "start_index": 5710,
+    "end_index": 5919,
+    "channel_error": 0.0682661716636576,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-9-1",
+    "spacecraft": "SMAP",
+    "channel_id": "E-9",
+    "channel_group": "E",
+    "start_index": 5710,
+    "end_index": 5919,
+    "channel_error": 0.0458825165084079,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-10-1",
+    "spacecraft": "SMAP",
+    "channel_id": "E-10",
+    "channel_group": "E",
+    "start_index": 1748,
+    "end_index": 1999,
+    "channel_error": 0.0706256568749462,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": false
+    }
+  },
+  {
+    "event_id": "E-10-2",
+    "spacecraft": "SMAP",
+    "channel_id": "E-10",
+    "channel_group": "E",
+    "start_index": 5010,
+    "end_index": 5149,
+    "channel_error": 0.0706256568749462,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-10-3",
+    "spacecraft": "SMAP",
+    "channel_id": "E-10",
+    "channel_group": "E",
+    "start_index": 5570,
+    "end_index": 5963,
+    "channel_error": 0.0706256568749462,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-11-1",
+    "spacecraft": "SMAP",
+    "channel_id": "E-11",
+    "channel_group": "E",
+    "start_index": 1718,
+    "end_index": 2000,
+    "channel_error": 0.075568406879118,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": false
+    }
+  },
+  {
+    "event_id": "E-11-2",
+    "spacecraft": "SMAP",
+    "channel_id": "E-11",
+    "channel_group": "E",
+    "start_index": 5010,
+    "end_index": 5149,
+    "channel_error": 0.075568406879118,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-11-3",
+    "spacecraft": "SMAP",
+    "channel_id": "E-11",
+    "channel_group": "E",
+    "start_index": 5570,
+    "end_index": 5964,
+    "channel_error": 0.075568406879118,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-12-1",
+    "spacecraft": "SMAP",
+    "channel_id": "E-12",
+    "channel_group": "E",
+    "start_index": 1775,
+    "end_index": 2008,
+    "channel_error": 0.0619181869177445,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": false
+    }
+  },
+  {
+    "event_id": "E-12-2",
+    "spacecraft": "SMAP",
+    "channel_id": "E-12",
+    "channel_group": "E",
+    "start_index": 5010,
+    "end_index": 5149,
+    "channel_error": 0.0619181869177445,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-12-3",
+    "spacecraft": "SMAP",
+    "channel_id": "E-12",
+    "channel_group": "E",
+    "start_index": 5570,
+    "end_index": 5709,
+    "channel_error": 0.0619181869177445,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-12-4",
+    "spacecraft": "SMAP",
+    "channel_id": "E-12",
+    "channel_group": "E",
+    "start_index": 5850,
+    "end_index": 5919,
+    "channel_error": 0.0619181869177445,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-12-5",
+    "spacecraft": "SMAP",
+    "channel_id": "E-12",
+    "channel_group": "E",
+    "start_index": 5990,
+    "end_index": 6594,
+    "channel_error": 0.0619181869177445,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-13-1",
+    "spacecraft": "SMAP",
+    "channel_id": "E-13",
+    "channel_group": "E",
+    "start_index": 5570,
+    "end_index": 5709,
+    "channel_error": 0.0605315063760955,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "E-13-2",
+    "spacecraft": "SMAP",
+    "channel_id": "E-13",
+    "channel_group": "E",
+    "start_index": 6480,
+    "end_index": 6549,
+    "channel_error": 0.0605315063760955,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "A-1-1",
+    "spacecraft": "SMAP",
+    "channel_id": "A-1",
+    "channel_group": "A",
+    "start_index": 4730,
+    "end_index": 4869,
+    "channel_error": 0.0124669074372061,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-1-1",
+    "spacecraft": "SMAP",
+    "channel_id": "D-1",
+    "channel_group": "D",
+    "start_index": 5220,
+    "end_index": 5359,
+    "channel_error": 0.0732652565119006,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-1-2",
+    "spacecraft": "SMAP",
+    "channel_id": "D-1",
+    "channel_group": "D",
+    "start_index": 5570,
+    "end_index": 5919,
+    "channel_error": 0.0732652565119006,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "P-2-1",
+    "spacecraft": "SMAP",
+    "channel_id": "P-2",
+    "channel_group": "P",
+    "start_index": 5290,
+    "end_index": 5709,
+    "channel_error": 0.0538843873830066,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "P-3-1",
+    "spacecraft": "SMAP",
+    "channel_id": "P-3",
+    "channel_group": "P",
+    "start_index": 5360,
+    "end_index": 5673,
+    "channel_error": 0.0362525603243089,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "P-3-2",
+    "spacecraft": "SMAP",
+    "channel_id": "P-3",
+    "channel_group": "P",
+    "start_index": 5780,
+    "end_index": 6059,
+    "channel_error": 0.0362525603243089,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-2-1",
+    "spacecraft": "SMAP",
+    "channel_id": "D-2",
+    "channel_group": "D",
+    "start_index": 4660,
+    "end_index": 4869,
+    "channel_error": 0.0201602949451903,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-2-2",
+    "spacecraft": "SMAP",
+    "channel_id": "D-2",
+    "channel_group": "D",
+    "start_index": 8440,
+    "end_index": 8509,
+    "channel_error": 0.0201602949451903,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-3-1",
+    "spacecraft": "SMAP",
+    "channel_id": "D-3",
+    "channel_group": "D",
+    "start_index": 5360,
+    "end_index": 5919,
+    "channel_error": 0.0563718073335617,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-4-1",
+    "spacecraft": "SMAP",
+    "channel_id": "D-4",
+    "channel_group": "D",
+    "start_index": 5290,
+    "end_index": 5779,
+    "channel_error": 0.047635769302921,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "A-2-1",
+    "spacecraft": "SMAP",
+    "channel_id": "A-2",
+    "channel_group": "A",
+    "start_index": 1043,
+    "end_index": 1345,
+    "channel_error": 0.0748263979911481,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": false
+    }
+  },
+  {
+    "event_id": "A-2-2",
+    "spacecraft": "SMAP",
+    "channel_id": "A-2",
+    "channel_group": "A",
+    "start_index": 1463,
+    "end_index": 1716,
+    "channel_error": 0.0748263979911481,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": false
+    }
+  },
+  {
+    "event_id": "A-2-3",
+    "spacecraft": "SMAP",
+    "channel_id": "A-2",
+    "channel_group": "A",
+    "start_index": 4450,
+    "end_index": 4659,
+    "channel_error": 0.0748263979911481,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "A-3-1",
+    "spacecraft": "SMAP",
+    "channel_id": "A-3",
+    "channel_group": "A",
+    "start_index": 4590,
+    "end_index": 4869,
+    "channel_error": 0.0487577226969846,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "A-4-1",
+    "spacecraft": "SMAP",
+    "channel_id": "A-4",
+    "channel_group": "A",
+    "start_index": 4520,
+    "end_index": 4796,
+    "channel_error": 0.0563138231351056,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "G-1-1",
+    "spacecraft": "SMAP",
+    "channel_id": "G-1",
+    "channel_group": "G",
+    "start_index": 5990,
+    "end_index": 6129,
+    "channel_error": 0.0653990003824348,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": false
+    }
+  },
+  {
+    "event_id": "G-2-1",
+    "spacecraft": "SMAP",
+    "channel_id": "G-2",
+    "channel_group": "G",
+    "start_index": 4030,
+    "end_index": 4169,
+    "channel_error": 0.0072726046950057,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-5-1",
+    "spacecraft": "SMAP",
+    "channel_id": "D-5",
+    "channel_group": "D",
+    "start_index": 4800,
+    "end_index": 4939,
+    "channel_error": 0.1152268870115973,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-6-1",
+    "spacecraft": "SMAP",
+    "channel_id": "D-6",
+    "channel_group": "D",
+    "start_index": 4870,
+    "end_index": 5009,
+    "channel_error": 0.0457262330678073,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-7-1",
+    "spacecraft": "SMAP",
+    "channel_id": "D-7",
+    "channel_group": "D",
+    "start_index": 5010,
+    "end_index": 5359,
+    "channel_error": 0.0461309625401556,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-7-2",
+    "spacecraft": "SMAP",
+    "channel_id": "D-7",
+    "channel_group": "D",
+    "start_index": 5430,
+    "end_index": 5639,
+    "channel_error": 0.0461309625401556,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-7-3",
+    "spacecraft": "SMAP",
+    "channel_id": "D-7",
+    "channel_group": "D",
+    "start_index": 5710,
+    "end_index": 5849,
+    "channel_error": 0.0461309625401556,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "F-1-1",
+    "spacecraft": "SMAP",
+    "channel_id": "F-1",
+    "channel_group": "F",
+    "start_index": 7530,
+    "end_index": 7599,
+    "channel_error": 0.0989896194631949,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": false
+    }
+  },
+  {
+    "event_id": "P-4-1",
+    "spacecraft": "SMAP",
+    "channel_id": "P-4",
+    "channel_group": "P",
+    "start_index": 931,
+    "end_index": 1186,
+    "channel_error": 0.0156167540602682,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "P-4-2",
+    "spacecraft": "SMAP",
+    "channel_id": "P-4",
+    "channel_group": "P",
+    "start_index": 2171,
+    "end_index": 2349,
+    "channel_error": 0.0156167540602682,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "P-4-3",
+    "spacecraft": "SMAP",
+    "channel_id": "P-4",
+    "channel_group": "P",
+    "start_index": 4800,
+    "end_index": 4981,
+    "channel_error": 0.0156167540602682,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "G-3-1",
+    "spacecraft": "SMAP",
+    "channel_id": "G-3",
+    "channel_group": "G",
+    "start_index": 4170,
+    "end_index": 4377,
+    "channel_error": 0.0052095439553463,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "G-3-2",
+    "spacecraft": "SMAP",
+    "channel_id": "G-3",
+    "channel_group": "G",
+    "start_index": 5640,
+    "end_index": 5709,
+    "channel_error": 0.0052095439553463,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": false
+    }
+  },
+  {
+    "event_id": "T-1-1",
+    "spacecraft": "SMAP",
+    "channel_id": "T-1",
+    "channel_group": "T",
+    "start_index": 2560,
+    "end_index": 2979,
+    "channel_error": 0.0524167089835578,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "T-1-2",
+    "spacecraft": "SMAP",
+    "channel_id": "T-1",
+    "channel_group": "T",
+    "start_index": 3960,
+    "end_index": 4029,
+    "channel_error": 0.0524167089835578,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": false
+    }
+  },
+  {
+    "event_id": "T-1-3",
+    "spacecraft": "SMAP",
+    "channel_id": "T-1",
+    "channel_group": "T",
+    "start_index": 6620,
+    "end_index": 6689,
+    "channel_error": 0.0524167089835578,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": false
+    }
+  },
+  {
+    "event_id": "T-2-1",
+    "spacecraft": "SMAP",
+    "channel_id": "T-2",
+    "channel_group": "T",
+    "start_index": 6900,
+    "end_index": 7039,
+    "channel_error": 0.0363597742348987,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-9-1",
+    "spacecraft": "SMAP",
+    "channel_id": "D-9",
+    "channel_group": "D",
+    "start_index": 6410,
+    "end_index": 6619,
+    "channel_error": 0.0152370680202806,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-9-2",
+    "spacecraft": "SMAP",
+    "channel_id": "D-9",
+    "channel_group": "D",
+    "start_index": 7326,
+    "end_index": 7395,
+    "channel_error": 0.0152370680202806,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "F-2-1",
+    "spacecraft": "SMAP",
+    "channel_id": "F-2",
+    "channel_group": "F",
+    "start_index": 6760,
+    "end_index": 6969,
+    "channel_error": 0.0480684822973612,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "G-4-1",
+    "spacecraft": "SMAP",
+    "channel_id": "G-4",
+    "channel_group": "G",
+    "start_index": 4660,
+    "end_index": 4869,
+    "channel_error": 0.007885552142634,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "T-3-1",
+    "spacecraft": "SMAP",
+    "channel_id": "T-3",
+    "channel_group": "T",
+    "start_index": 2057,
+    "end_index": 2320,
+    "channel_error": 0.004002701140071,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "T-3-2",
+    "spacecraft": "SMAP",
+    "channel_id": "T-3",
+    "channel_group": "T",
+    "start_index": 5220,
+    "end_index": 5417,
+    "channel_error": 0.004002701140071,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-11-1",
+    "spacecraft": "SMAP",
+    "channel_id": "D-11",
+    "channel_group": "D",
+    "start_index": 4240,
+    "end_index": 4449,
+    "channel_error": 0.0148913506193004,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-12-1",
+    "spacecraft": "SMAP",
+    "channel_id": "D-12",
+    "channel_group": "D",
+    "start_index": 5360,
+    "end_index": 5709,
+    "channel_error": 0.0842285554472894,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-12-2",
+    "spacecraft": "SMAP",
+    "channel_id": "D-12",
+    "channel_group": "D",
+    "start_index": 7320,
+    "end_index": 7529,
+    "channel_error": 0.0842285554472894,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "B-1-1",
+    "spacecraft": "SMAP",
+    "channel_id": "B-1",
+    "channel_group": "B",
+    "start_index": 5010,
+    "end_index": 5219,
+    "channel_error": 0.040031706439312,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "G-6-1",
+    "spacecraft": "SMAP",
+    "channel_id": "G-6",
+    "channel_group": "G",
+    "start_index": 5640,
+    "end_index": 5779,
+    "channel_error": 0.0075824219586111,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "G-7-1",
+    "spacecraft": "SMAP",
+    "channel_id": "G-7",
+    "channel_group": "G",
+    "start_index": 3610,
+    "end_index": 3878,
+    "channel_error": 0.0314838455015358,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "G-7-2",
+    "spacecraft": "SMAP",
+    "channel_id": "G-7",
+    "channel_group": "G",
+    "start_index": 5010,
+    "end_index": 5217,
+    "channel_error": 0.0314838455015358,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "G-7-3",
+    "spacecraft": "SMAP",
+    "channel_id": "G-7",
+    "channel_group": "G",
+    "start_index": 7530,
+    "end_index": 7810,
+    "channel_error": 0.0314838455015358,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "P-7-1",
+    "spacecraft": "SMAP",
+    "channel_id": "P-7",
+    "channel_group": "P",
+    "start_index": 5010,
+    "end_index": 5289,
+    "channel_error": 0.0321346185996162,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "P-7-2",
+    "spacecraft": "SMAP",
+    "channel_id": "P-7",
+    "channel_group": "P",
+    "start_index": 5360,
+    "end_index": 5429,
+    "channel_error": 0.0321346185996162,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "R-1-1",
+    "spacecraft": "SMAP",
+    "channel_id": "R-1",
+    "channel_group": "R",
+    "start_index": 4520,
+    "end_index": 4726,
+    "channel_error": 0.0131952277590592,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "A-5-1",
+    "spacecraft": "SMAP",
+    "channel_id": "A-5",
+    "channel_group": "A",
+    "start_index": 2700,
+    "end_index": 2979,
+    "channel_error": 0.0457583974409732,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "A-6-1",
+    "spacecraft": "SMAP",
+    "channel_id": "A-6",
+    "channel_group": "A",
+    "start_index": 1805,
+    "end_index": 2084,
+    "channel_error": 0.0111682961435028,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "A-7-1",
+    "spacecraft": "SMAP",
+    "channel_id": "A-7",
+    "channel_group": "A",
+    "start_index": 6200,
+    "end_index": 6689,
+    "channel_error": 0.0636891362362287,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "A-7-2",
+    "spacecraft": "SMAP",
+    "channel_id": "A-7",
+    "channel_group": "A",
+    "start_index": 8300,
+    "end_index": 8509,
+    "channel_error": 0.0636891362362287,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-13-1",
+    "spacecraft": "SMAP",
+    "channel_id": "D-13",
+    "channel_group": "D",
+    "start_index": 5080,
+    "end_index": 5343,
+    "channel_error": 0.0231598609481995,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "P-2-1",
+    "spacecraft": "SMAP",
+    "channel_id": "P-2",
+    "channel_group": "P",
+    "start_index": 5290,
+    "end_index": 5709,
+    "channel_error": 0.0538843873830066,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "A-8-1",
+    "spacecraft": "SMAP",
+    "channel_id": "A-8",
+    "channel_group": "A",
+    "start_index": 7880,
+    "end_index": 8229,
+    "channel_error": 0.097750686154213,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "A-8-2",
+    "spacecraft": "SMAP",
+    "channel_id": "A-8",
+    "channel_group": "A",
+    "start_index": 8295,
+    "end_index": 8364,
+    "channel_error": 0.097750686154213,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "M-6-1",
+    "spacecraft": "MSL",
+    "channel_id": "M-6",
+    "channel_group": "M",
+    "start_index": 1815,
+    "end_index": 2038,
+    "channel_error": 0.0499943561242653,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "S-2-1",
+    "spacecraft": "MSL",
+    "channel_id": "S-2",
+    "channel_group": "S",
+    "start_index": 806,
+    "end_index": 1064,
+    "channel_error": 0.0110396773631053,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "P-10-1",
+    "spacecraft": "MSL",
+    "channel_id": "P-10",
+    "channel_group": "P",
+    "start_index": 4590,
+    "end_index": 5009,
+    "channel_error": 0.064889670933504,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "T-5-1",
+    "spacecraft": "MSL",
+    "channel_id": "T-5",
+    "channel_group": "T",
+    "start_index": 1114,
+    "end_index": 1381,
+    "channel_error": 0.0078798191148695,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "F-7-1",
+    "spacecraft": "MSL",
+    "channel_id": "F-7",
+    "channel_group": "F",
+    "start_index": 1322,
+    "end_index": 1576,
+    "channel_error": 0.1688371268185682,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "F-7-2",
+    "spacecraft": "MSL",
+    "channel_id": "F-7",
+    "channel_group": "F",
+    "start_index": 1967,
+    "end_index": 2206,
+    "channel_error": 0.1688371268185682,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": false
+    }
+  },
+  {
+    "event_id": "F-7-3",
+    "spacecraft": "MSL",
+    "channel_id": "F-7",
+    "channel_group": "F",
+    "start_index": 2700,
+    "end_index": 2839,
+    "channel_error": 0.1688371268185682,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "M-3-1",
+    "spacecraft": "MSL",
+    "channel_id": "M-3",
+    "channel_group": "M",
+    "start_index": 1372,
+    "end_index": 1652,
+    "channel_error": 0.0830202752157233,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "M-4-1",
+    "spacecraft": "MSL",
+    "channel_id": "M-4",
+    "channel_group": "M",
+    "start_index": 1315,
+    "end_index": 1595,
+    "channel_error": 0.1152588683631729,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "M-5-1",
+    "spacecraft": "MSL",
+    "channel_id": "M-5",
+    "channel_group": "M",
+    "start_index": 1529,
+    "end_index": 1793,
+    "channel_error": 0.0946471257636816,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "P-15-1",
+    "spacecraft": "MSL",
+    "channel_id": "P-15",
+    "channel_group": "P",
+    "start_index": 1300,
+    "end_index": 1567,
+    "channel_error": 0.0179327502347569,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "C-1-1",
+    "spacecraft": "MSL",
+    "channel_id": "C-1",
+    "channel_group": "C",
+    "start_index": 500,
+    "end_index": 757,
+    "channel_error": 0.0289896853537659,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "C-2-1",
+    "spacecraft": "MSL",
+    "channel_id": "C-2",
+    "channel_group": "C",
+    "start_index": 250,
+    "end_index": 445,
+    "channel_error": 0.1092194298070402,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "T-12-1",
+    "spacecraft": "MSL",
+    "channel_id": "T-12",
+    "channel_group": "T",
+    "start_index": 616,
+    "end_index": 852,
+    "channel_error": 0.0236906472547599,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "F-4-1",
+    "spacecraft": "MSL",
+    "channel_id": "F-4",
+    "channel_group": "F",
+    "start_index": 2700,
+    "end_index": 2839,
+    "channel_error": 0.0351116405610874,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "F-5-1",
+    "spacecraft": "MSL",
+    "channel_id": "F-5",
+    "channel_group": "F",
+    "start_index": 3540,
+    "end_index": 3813,
+    "channel_error": 0.0184758778165889,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-14-1",
+    "spacecraft": "MSL",
+    "channel_id": "D-14",
+    "channel_group": "D",
+    "start_index": 1891,
+    "end_index": 2119,
+    "channel_error": 0.0294318758185285,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "P-14-1",
+    "spacecraft": "MSL",
+    "channel_id": "P-14",
+    "channel_group": "P",
+    "start_index": 4590,
+    "end_index": 4869,
+    "channel_error": 0.0382841678826789,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "T-8-1",
+    "spacecraft": "MSL",
+    "channel_id": "T-8",
+    "channel_group": "T",
+    "start_index": 786,
+    "end_index": 1036,
+    "channel_error": 0.0397080375342255,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "T-8-2",
+    "spacecraft": "MSL",
+    "channel_id": "T-8",
+    "channel_group": "T",
+    "start_index": 1273,
+    "end_index": 1488,
+    "channel_error": 0.0397080375342255,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "P-11-1",
+    "spacecraft": "MSL",
+    "channel_id": "P-11",
+    "channel_group": "P",
+    "start_index": 1190,
+    "end_index": 1464,
+    "channel_error": 0.0241084118048704,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "P-11-2",
+    "spacecraft": "MSL",
+    "channel_id": "P-11",
+    "channel_group": "P",
+    "start_index": 1750,
+    "end_index": 2010,
+    "channel_error": 0.0241084118048704,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-15-1",
+    "spacecraft": "MSL",
+    "channel_id": "D-15",
+    "channel_group": "D",
+    "start_index": 1751,
+    "end_index": 2147,
+    "channel_error": 0.1520877181350682,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "D-16-1",
+    "spacecraft": "MSL",
+    "channel_id": "D-16",
+    "channel_group": "D",
+    "start_index": 726,
+    "end_index": 957,
+    "channel_error": 0.1704966039486326,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "M-7-1",
+    "spacecraft": "MSL",
+    "channel_id": "M-7",
+    "channel_group": "M",
+    "start_index": 861,
+    "end_index": 1156,
+    "channel_error": 0.0245076957597478,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  },
+  {
+    "event_id": "F-8-1",
+    "spacecraft": "MSL",
+    "channel_id": "F-8",
+    "channel_group": "F",
+    "start_index": 1915,
+    "end_index": 2238,
+    "channel_error": 0.0826735138053848,
+    "detector": "telemanom_lstm",
+    "evaluation": {
+      "matches_labeled_anomaly": true
+    }
+  }
+]
