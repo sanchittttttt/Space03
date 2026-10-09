@@ -68,6 +68,40 @@ python example.py -l labeled_anomalies.csv
 python example.py
 ```
 
+#### Isolation Forest
+
+The checked-in `channels/` telemetry files can be used to train and evaluate
+per-channel Isolation Forest models without downloading the original `.npy`
+training data. Install the added scikit-learn dependency, then run:
+
+```sh
+python train_isolation_forest.py
+```
+
+The command fits on the first 50% of each channel's timeline, excluding
+training windows that overlap labeled anomalies. It selects each channel's
+score threshold on the next 10% using its labels, then evaluates on the final
+40%. It writes per-channel metrics to
+`artifacts/isolation_forest/metrics.csv` and serialized models to
+`artifacts/isolation_forest/models/`. Window size, training fraction,
+calibration fraction, and estimator count can be set with command-line options.
+
+#### ESA Mission 1 subset
+
+To fetch only three small labeled channel archives (about 8 MB), then train and
+evaluate on their timestamped samples:
+
+```sh
+python -m pip install -r requirements-esa.txt
+python download_esa_subset.py --channels 61,62,63 --output-dir datasets/esa-anomaly-dataset/data/mission1-subset
+python train_esa_subset.py
+```
+
+The ESA trainer uses an 8-sample window, selected by validation F1, and uses
+F1 to select thresholds by default. Using
+`--threshold-objective accuracy` on this highly imbalanced subset gives high
+accuracy by predicting no anomalies, so review precision, recall, and F1 too.
+
 A jupyter notebook for evaluating results for a run is at `telemanom/result_viewer.ipynb`. To launch notebook:
 
 ```sh

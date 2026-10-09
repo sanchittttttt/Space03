@@ -9,6 +9,9 @@ telemanom/__pycache__*
 data.zip*
 .idea/*
 data/
+artifacts/isolation_forest/
+artifacts/esa_isolation_forest/
+datasets/esa-anomaly-dataset/
 *.zip
 kaggle.json
 .env
