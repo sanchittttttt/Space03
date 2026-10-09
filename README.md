@@ -102,6 +102,23 @@ F1 to select thresholds by default. Using
 `--threshold-objective accuracy` on this highly imbalanced subset gives high
 accuracy by predicting no anomalies, so review precision, recall, and F1 too.
 
+Start the FastAPI backend after training:
+
+```sh
+uvicorn api:app --reload
+```
+
+`GET /health` reports available models, `GET /channels` lists their channel
+IDs, and `POST /predict/{channel_id}` scores a telemetry array. Send at least
+the model's window size of values as JSON, for example:
+
+```json
+{"telemetry": [0.12, 0.14, 0.13, 0.15, 0.16, 0.14, 0.18, 0.19]}
+```
+
+The saved `.joblib` model artifacts are local and Git-ignored; download the
+sample channels and run the trainer before starting the API.
+
 A jupyter notebook for evaluating results for a run is at `telemanom/result_viewer.ipynb`. To launch notebook:
 
 ```sh
