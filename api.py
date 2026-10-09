@@ -147,6 +147,48 @@ def load_channel_series(channel_id: int):
     return values, timestamps
 
 
+def assign_triage_priority(interval_length_steps, channel_event_count,
+                           detector_count, agreement,
+                           channel_error_percentile):
+    reasons = []
+    if (agreement is True and detector_count >= 2 and
+            interval_length_steps >= 100 and
+            channel_error_percentile is not None and
+            channel_error_percentile >= 0.9):
+        priority = "urgent_review"
+        reasons.extend((
+            "Both detectors agree on an overlapping interval.",
+            "The interval is at least 100 steps long.",
+            "Channel error ranks in the top 10%.",
+        ))
+    elif (detector_count == 1 and interval_length_steps < 20 and
+          channel_event_count == 1):
+        priority = "insufficient_evidence"
+        reasons.append(
+            "One detector flagged a short interval with no repeat on this channel.")
+    elif (agreement is True or interval_length_steps >= 50 or
+          channel_event_count >= 2):
+        priority = "engineering_review"
+        if agreement is True:
+            reasons.append("Both detectors agree on an overlapping interval.")
+        if interval_length_steps >= 50:
+            reasons.append("The interval is at least 50 steps long.")
+        if channel_event_count >= 2:
+            reasons.append("Multiple detected intervals occur on this channel.")
+    else:
+        priority = "routine_monitoring"
+        reasons.append("Short, isolated interval flagged by one detector.")
+
+    return {
+        "priority": priority,
+        "reasons": reasons,
+        "detector_count": detector_count,
+        "agreement": agreement,
+        "channel_error_percentile": channel_error_percentile,
+        "policy_source": "SPACE-03 Team Handoff, Rule-based triage spec",
+    }
+
+
 @app.get("/health")
 def health():
     available_channels = sorted(
@@ -222,9 +264,6 @@ def build_structured_report(channel_id, artifact, values, timestamps,
             if timestamps is not None else None)
         minimum_score = float(np.min(scores[group]))
         interval_length = sample_end - sample_start + 1
-        references = retrieve_references(
-            "not_documented", "isolation_forest", interval_length,
-            "not_assigned")
         all_anomalies.append({
             "start_time": start_time,
             "end_time": end_time,
@@ -245,12 +284,23 @@ def build_structured_report(channel_id, artifact, values, timestamps,
                 "first_value": float(interval_values[0]),
                 "last_value": float(interval_values[-1]),
             },
-            "triage": {
-                "priority": "not_assigned",
-                "reasons": ["No triage policy has been implemented."],
-            },
-            "similar_labeled_cases": references,
         })
+
+    channel_event_count = len(all_anomalies)
+    for anomaly in all_anomalies:
+        duration_steps = anomaly["duration_steps"]
+        agreement = None
+        matched_event_id = None
+        channel_error_percentile = None
+        anomaly["agreement"] = agreement
+        anomaly["matched_event_id"] = matched_event_id
+        anomaly["triage"] = assign_triage_priority(
+            duration_steps, channel_event_count, detector_count=1,
+            agreement=agreement,
+            channel_error_percentile=channel_error_percentile)
+        anomaly["similar_labeled_cases"] = retrieve_references(
+            "unknown", "isolation_forest", duration_steps,
+            anomaly["triage"]["priority"])
 
     recent_values = values[-min(len(values), max(window_size * 4, 16)):]
     slope = float(np.polyfit(np.arange(len(recent_values)),
@@ -280,6 +330,12 @@ def build_structured_report(channel_id, artifact, values, timestamps,
             "end_sample": int(len(values) - 1),
         },
         "total_anomaly_intervals": len(all_anomalies),
+        "triage_summary": {
+            priority: sum(1 for anomaly in all_anomalies
+                          if anomaly["triage"]["priority"] == priority)
+            for priority in ("urgent_review", "engineering_review",
+                             "routine_monitoring", "insufficient_evidence")
+        },
         "anomaly_interval_offset": offset,
         "anomalies": all_anomalies[offset:offset + limit],
         "has_more": offset + limit < len(all_anomalies),
@@ -309,7 +365,8 @@ def build_structured_report(channel_id, artifact, values, timestamps,
             "Similar labeled events are context and do not establish a shared cause.",
             "The dataset contains irregular sample intervals; reported durations use actual timestamps where available.",
             "This report analyzes one channel at a time; it does not establish cross-channel causality.",
-            "Triage priorities are not assigned by this backend.",
+            "Triage priorities are review heuristics, not fault diagnoses.",
+            "Only one detector is available for these channels; detector agreement and channel-error rank are unavailable, so urgent review cannot be assigned.",
         ],
     }
     report["summary"], report["summary_generation"] = generate_summary(report)

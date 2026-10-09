@@ -135,6 +135,11 @@ default. An optional OpenAI-compatible chat endpoint can be enabled with
 `RAG_CHAT_COMPLETIONS_URL`, `RAG_API_KEY`, and `RAG_MODEL`; report/question
 content is sent externally only when those settings are configured.
 
+Each report interval includes a rule-based triage priority and reasons using
+the SPACE-03 handoff thresholds. The current ESA run has one detector only, so
+agreement is reported as unavailable and `urgent_review` cannot be assigned;
+the priority is a review heuristic, not a fault diagnosis.
+
 A jupyter notebook for evaluating results for a run is at `telemanom/result_viewer.ipynb`. To launch notebook:
 
 ```sh
