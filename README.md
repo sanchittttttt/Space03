@@ -119,6 +119,22 @@ the model's window size of values as JSON, for example:
 The saved `.joblib` model artifacts are local and Git-ignored; download the
 sample channels and run the trainer before starting the API.
 
+`GET /report/{channel_id}?limit=50&offset=0` scans the saved channel's held-out
+time range and returns paginated anomaly intervals with timestamps, durations,
+scores, supporting measurements, recent trend, uncertainty, similar labeled
+cases, and cited project/technical passages. `POST /report/{channel_id}` can
+instead analyze a custom `telemetry` array with an optional, equally sized,
+timezone-aware `timestamps` array.
+
+`POST /ask` accepts a `question` and optional detection context (`channel_group`,
+`detector`, `interval_length_steps`, and `triage_label`) and returns relevant
+source passages with document/section citations. No approved spacecraft
+maintenance procedures are currently indexed, so the API explicitly declines
+to invent operational recommendations. Summaries use a local template by
+default. An optional OpenAI-compatible chat endpoint can be enabled with
+`RAG_CHAT_COMPLETIONS_URL`, `RAG_API_KEY`, and `RAG_MODEL`; report/question
+content is sent externally only when those settings are configured.
+
 A jupyter notebook for evaluating results for a run is at `telemanom/result_viewer.ipynb`. To launch notebook:
 
 ```sh

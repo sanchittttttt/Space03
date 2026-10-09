@@ -127,6 +127,8 @@ def train_channel(channel_id, labels_path, data_dir, output_dir, args):
         "threshold": threshold,
         "window_size": args.window_size,
         "channel": channel_name,
+        "evaluation_start_fraction": (
+            args.train_fraction + args.calibration_fraction),
     }, model_path)
 
     result = {
