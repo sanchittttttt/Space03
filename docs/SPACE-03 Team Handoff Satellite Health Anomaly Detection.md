@@ -65,7 +65,7 @@ The repo root is the folder that contains `example.py`.
 | `events.json` | 112 detected anomaly events (one per flagged interval per channel) |
 | `lead_times.csv` | Lead time for every labeled anomaly that was detected |
 | `plot_channel.py` | Plots one channel with labeled and detected intervals |
-| `export_channels.py` | Writes `channels/<channel>.json` for the dashboard |
+| `export_channel.py` | Writes `channels/<channel>.json` for the dashboard |
 | `channels/` | Per-channel telemetry and error series |
 
 ## 6. Event format (events.json)
