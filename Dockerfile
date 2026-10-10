@@ -1,30 +1,16 @@
-FROM ubuntu:latest
-
-RUN apt-get update \
-  && apt-get install -y python3-pip python3-dev \
-  && cd /usr/local/bin \
-  && ln -s /usr/bin/python3 python \
-  && pip3 install --upgrade pip
-
-RUN apt-get install -y git curl zip unzip
+FROM python:3.11-slim
 
 WORKDIR /app
 
-RUN cd /app
+# Upgrade pip and install prebuilt binary wheels
+COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip setuptools wheel && \
+    pip install --no-cache-dir -r requirements.txt
 
-COPY . /app/telemanom
+# Copy all project code
+COPY . .
 
-# TBD: It'd be better to mount this as a volume, on the host, so updates can be made
-RUN cd /app/telemanom && \
-curl -O https://s3-us-west-2.amazonaws.com/telemanom/data.zip && unzip data.zip && rm data.zip
+ENV PORT=8000
+EXPOSE 8000
 
-RUN cd /app/telemanom && \
-pip install -r requirements.txt
-
-WORKDIR /app/telemanom
-
-ENTRYPOINT ["python", "example.py"]
-
-LABEL maintainer_dockerfile="haisam.ido@gmail.com"
-LABEL maintainer_code=https://github.com/khundman/telemanom
-
+CMD ["sh", "-c", "uvicorn api:app --host 0.0.0.0 --port ${PORT:-8000}"]
