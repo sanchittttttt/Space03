@@ -199,6 +199,19 @@ def assign_triage_priority(interval_length_steps, channel_event_count,
     }
 
 
+@app.get("/")
+def root():
+    return {
+        "status": "online",
+        "service": "Offbeat Telemetry Anomaly Detection API",
+        "version": "1.0.0",
+        "docs_url": "/docs",
+        "health_url": "/health",
+        "channels_url": "/channels",
+        "events_url": "/events",
+    }
+
+
 @app.get("/health")
 def health():
     available_channels = sorted(
