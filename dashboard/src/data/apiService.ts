@@ -86,7 +86,7 @@ export interface HealthResponse {
   available_channels: string[];
 }
 
-const API_BASE = '/api';
+const API_BASE = (import.meta.env.VITE_API_URL as string | undefined)?.replace(/\/$/, '') || '/api';
 
 export const apiService = {
   // Check backend health

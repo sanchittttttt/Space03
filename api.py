@@ -22,10 +22,20 @@ DATA_DIR = Path(os.getenv(
     "ESA_DATA_DIR",
     str(ROOT / "datasets/esa-anomaly-dataset/data/mission1-subset/ESA-Mission1")))
 
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI(
     title="ESA Telemetry Anomaly API",
     version="1.0.0",
     description="Score ESA telemetry windows with trained Isolation Forest models.",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
