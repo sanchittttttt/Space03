@@ -1,4 +1,4 @@
-data/*
+/data/*
 *DS_Store
 *archive/*
 tmp/*
@@ -8,7 +8,8 @@ telemanom/__pycache__*
 # results/20*
 data.zip*
 .idea/*
-data/
+/data/
+!dashboard/src/data/**
 artifacts/isolation_forest/
 artifacts/esa_isolation_forest/
 datasets/esa-anomaly-dataset/
@@ -18,3 +19,9 @@ kaggle.json
 __pycache__/
 check_*.png
 telemanom/labeled_anomalies.csv
+node_modules/
+dashboard/node_modules/
+dist/
+dashboard/dist/
+.vite/
+dashboard/.vite/

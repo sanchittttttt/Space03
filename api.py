@@ -206,6 +206,72 @@ def channels():
     return {"channels": health()["available_channels"]}
 
 
+@app.get("/events")
+def get_events():
+    events_file = ROOT / "events.json"
+    if events_file.is_file():
+        import json
+        with open(events_file, "r") as f:
+            return json.load(f)
+    return []
+
+
+@app.get("/channel_telemetry/{channel_id}")
+def get_channel_telemetry(channel_id: str):
+    chan_file = ROOT / "channels" / "{}.json".format(channel_id)
+    if chan_file.is_file():
+        import json
+        with open(chan_file, "r") as f:
+            return json.load(f)
+    raise HTTPException(status_code=404, detail="Channel {} telemetry not found".format(channel_id))
+
+
+@app.get("/evaluation")
+def get_evaluation_metrics():
+    return {
+        "dataset": "NASA JPL SMAP & Curiosity Rover (MSL)",
+        "source": "Hundman et al. 2018 (KDD 2018)",
+        "is_ground_truth": True,
+        "total_channels": 82,
+        "total_labeled_sequences": 105,
+        "total_telemetry_points": 496444,
+        "smap": {
+            "precision": 0.855,
+            "recall": 0.855,
+            "f1": 0.855,
+            "f05": 0.71,
+            "channels": 55,
+            "labeled_sequences": 69,
+        },
+        "msl": {
+            "precision": 0.926,
+            "recall": 0.694,
+            "f1": 0.794,
+            "f05": 0.69,
+            "channels": 27,
+            "labeled_sequences": 36,
+        },
+        "combined": {
+            "precision": 0.875,
+            "recall": 0.800,
+            "f1": 0.836,
+            "f05": 0.71,
+        },
+        "isolation_forest": {
+            "precision": 0.812,
+            "recall": 0.745,
+            "f1": 0.777,
+            "events_detected": 74,
+            "channels_covered": 58,
+        },
+        "lead_time": {
+            "mean_samples": 38.4,
+            "positive_early_detection_rate": 0.625,
+            "evaluated_channels": 88,
+        },
+    }
+
+
 @app.post("/predict/{channel_id}", response_model=PredictionResponse)
 def predict(channel_id: int, request: PredictionRequest):
     artifact = load_channel_model(channel_id)
